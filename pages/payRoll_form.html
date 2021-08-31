@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../assets/images/1.png">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap&quot; rel="stylesheet">
-        <title>Employee Payroll Form</title>
         <link rel="stylesheet" href="../css/payroll_form.css">
-
+        <title>Employee Payroll Form</title>
     </head>
     <body>
-        
+        <!-- UC1 -->
         <header class="header-content header">
         <div class="logo-content">
             <img src="../assets/images/logo.png" alt="" width="3%" height="3%">
@@ -21,5 +19,15 @@
             </div>
         </div>
         </header>
+        <!-- UC2 -->
+        <div>
+            <form class = "form" action="#" onsubmit="save(event);return false">
+                <div class="form-head"> Employee Payroll Form </div>
+                <div class = "row-content">
+                    <label class="label text" for="name">Name</label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Your Name.." required>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
