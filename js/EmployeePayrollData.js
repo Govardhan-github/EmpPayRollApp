@@ -8,7 +8,7 @@ class EmployeePayrollData {
 
     get name() { return this._name; }
     set name(name) {
-        let nameRegex = RegExp('^[A-Z][a-z A-Z \\s]{2,}$')
+        let nameRegex = RegExp('^[A-Z][a-z A-Z s]{2,}$')
         if (nameRegex.test(name))
             this._name = name;
         else throw 'Name is Incorrect!';
