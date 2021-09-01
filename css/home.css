@@ -3,12 +3,10 @@ html body{
     margin: 0;
     height: 100%;
 }
-
 .header{
     padding: 15px 0;
     background-color: #4bd5f7;
 }
-
 .header-content{
     display: flex;
     flex-direction: row;
@@ -40,7 +38,6 @@ html body{
 .emp-payroll{
     color: #42515f;
 }
-
 *{
     box-sizing: border-box;
 }
