@@ -43,7 +43,7 @@ class EmployeePayrollData {
          this._startDate = startDate 
         }
 
-    //method
+    //Tostring Method
     toString() {
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         const empDate = !this.startDate ? "undefined" :
