@@ -1,4 +1,4 @@
-//UC1
+
 html body{
     margin: 0;
     height: 100%;
@@ -41,7 +41,7 @@ html body{
 *{
     box-sizing: border-box;
 }
-//UC2
+
 .main-content {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,6 @@ html body{
     cursor: pointer;
     text-decoration: none;
 }
-///UC3
 
 .table-main {
     width: 80%;
@@ -110,7 +109,7 @@ td,
 th {
     text-align: left;
     padding: 5px 8px;
-    /* border: 1px solid #dddddd; */
+     border: 1px solid #dddddd; 
 }
 
 th {
