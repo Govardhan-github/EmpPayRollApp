@@ -39,13 +39,14 @@ function createAndUpdateStrorage(employeePayrollData) {
   );
 
   if (employeePayrollList != undefined) {
+    employeePayrollData._id=employeePayrollList.length + 1;
     employeePayrollList.push(employeePayrollData);
   } else {
+    employeePayrollData._id = 1;
     employeePayrollList = [employeePayrollData];
   }
   alert(employeePayrollList.toString());
-  localStorage.setItem(
-    "EmployeePayrollList",
+  localStorage.setItem("EmployeePayrollList",
     JSON.stringify(employeePayrollList)
   );
 }
