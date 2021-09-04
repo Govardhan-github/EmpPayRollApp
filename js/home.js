@@ -39,15 +39,13 @@ const getEmpDataFromStorage = () => {
       <td>
         <img id="${empPayrollData._id}"  src="../assets/icons/delete-black-18dp.svg" alt="delete" 
         onclick="remove(this)">
-        <img id="${empPayrollData._id}" src="../assets/icons/create-black-18dp.svg" alt="update" onclick="update(this)">
+        <img id="${empPayrollData._id}" src="../assets/icons/create-black-18dp.svg" alt="update"
+         onclick="update(this)">
       </td>
     </tr>
       `;
-      console.log(empPayrollList);
-
   }    
       document.querySelector("#table-display").innerHTML = innerHtml;
-
 
   }
 
@@ -71,4 +69,11 @@ const getDeptHtml =(deptList) => {
     deptHtml = `${deptHtml} <div class ='dept-label'>${dept}</div>`
   }
   return deptHtml;
+}
+
+const update=(node) =>{
+  let empPayrollData=empPayrollList.find(empData=> empData._id=node.id)
+  if(!empPayrollData) return;
+  localStorage.setItem('editEmp' ,JSON.stringify(empPayrollData));
+  window.location.replace(site_properties.add_emp_payroll_page);
 }
